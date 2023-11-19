@@ -32,6 +32,11 @@ export default {
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
       },
     },
+    screens: {
+      xs: "480px",
+      sm: "768px",
+      md: "1000px"
+    }
   },
   plugins: [],
 }

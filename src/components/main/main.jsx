@@ -23,12 +23,17 @@ import openedCoconut from "../../assets/opened-coconut.svg";
 import lightGraph from "../../assets/light-graph.svg";
 import thickGraph from "../../assets/thick-graph.svg";
 import gridColored from "../../assets/grid-colored.svg";
+import lastGraph from "../../assets/last-graph.svg";
+import indianMan from "../../assets/indian-man.svg";
+import officeBoy from "../../assets/office-boy.svg";
+import blackBoy from "../../assets/black-boy.svg";
+import funnyGirl from "../../assets/funny-girl.svg";
 
 const Main = () => {
   return (
     <div className="flex flex-col gap-5 justify-between w-full">
-      <div className="flex gap-5 h-72">
-        <div className="bg-light-theme-action-light-light-info rounded-md h-full p-5 w-4/6 shadow-md flex items-center justify-between">
+      <div className="flex flex-col md:flex-row gap-5 md:h-72 h-full">
+        <div className="bg-light-theme-action-light-light-info rounded-md h-full p-5 lg:w-4/6 md:w-full shadow-md flex items-center justify-between">
           <div className="w-72 flex flex-col gap-5">
             <h1 className="text-light-theme-gray-dark-blue-grey font-semibold text-xl">
               Welcome back Natalia! Check dashboard
@@ -54,7 +59,7 @@ const Main = () => {
             <img src={mainImg} alt="hero-img" className="w-80 h-60" />
           </div>
         </div>
-        <div className="flex flex-col justify-between w-2/6">
+        <div className="flex flex-col justify-between md:w-2/6 w-full h-full">
           <div className="bg-light-theme-primary-primary p-5 rounded-md shadow-md h-32">
             <div className="flex justify-between items-center text-white">
               <div>
@@ -69,7 +74,7 @@ const Main = () => {
               <img src={skillRate} alt="rating" />
             </div>
           </div>
-          <div className="bg-light-theme-gray-pure-white p-5 rounded-md shadow-md h-32 flex justify-between items-center">
+          <div className="bg-light-theme-gray-pure-white p-5 rounded-md shadow-md h-32 flex gap-5 justify-between items-center">
             <div className="flex flex-col gap-2">
               <p className="text-light-theme-gray-medium-blue-grey font-normal text-sm">
                 Earnings
@@ -94,8 +99,8 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-5 h-96">
-        <div className="bg-white rounded-md h-full p-5 w-4/6 shadow-md flex flex-col gap-5 justify-center">
+      <div className="flex flex-col md:flex-row gap-5 md:h-96 h-full">
+        <div className="bg-white rounded-md h-full p-5 md:w-4/6 w-full shadow-md flex flex-col gap-5 justify-center">
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-light-theme-gray-dark-blue-grey text-lg font-semibold">
@@ -133,7 +138,7 @@ const Main = () => {
             <img src={graph} alt="graph" />
           </div>
         </div>
-        <div className="flex flex-col justify-between w-2/6 bg-white rounded-md shadow-md">
+        <div className="flex flex-col justify-between md:w-2/6 w-full bg-white rounded-md shadow-md">
           <div className="flex flex-col gap-5 p-5">
             <div>
               <h1 className="font-normal text-lg text-light-theme-gray-dark-blue-grey">
@@ -169,8 +174,8 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-5 h-100">
-        <div className="flex flex-col gap-7 justify-center w-2/6 bg-white rounded-md shadow-md p-5">
+      <div className="flex flex-col md:flex-row gap-5 md:h-100 h-full">
+        <div className="flex flex-col gap-7 justify-center md:w-2/6 w-full bg-white rounded-md shadow-md p-5">
           <div>
             <h3 className="text-lg font-semibold text-light-theme-gray-dark-blue-grey">
               Recent Transactions
@@ -305,7 +310,7 @@ const Main = () => {
             </button>
           </div>
         </div>
-        <div className="bg-white rounded-md h-full p-5 w-4/6 shadow-md flex flex-col gap-7 justify-center">
+        <div className="bg-white rounded-md h-full p-5 md:w-4/6 w-full shadow-md flex flex-col gap-7 justify-center">
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-light-theme-gray-dark-blue-grey text-lg font-semibold">
@@ -490,31 +495,82 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-5 h-120">
-        <div className="bg-white rounded-md shadow-md w-2/6 p-5">
-          <div>
+      <div className="flex flex-col md:flex-row gap-5 md:h-120 h-full">
+        <div className="bg-white rounded-md shadow-md md:w-2/6 w-full p-5 flex flex-col gap-5">
+          <div className="flex justify-between items-center">
             <div>
-              <h3>Total profit</h3>
+              <h3 className="text-lg font-semibold text-light-theme-gray-dark-blue-grey">Total profit</h3>
             </div>
             <div>
               <EllipsisVerticalIcon className="h-6 w-6 cursor-pointer" />
             </div>
           </div>
-          <div>
+          <div className="flex gap-3 items-center">
             <div>
               <img src={gridColored} alt="grid-colored" />
             </div>
-            <div>
-              <h3>$63,489.50</h3>
-              <p>Total Earnings</p>
+            <div className="flex flex-col gap-1">
+              <h3 className="text-light-theme-gray-dark-blue-grey font-semibold text-xl">$63,489.50</h3>
+              <p className="text-light-theme-gray-medium-blue-grey text-sm font-normal">Total Earnings</p>
             </div>
           </div>
           <div>
-
+            <img src={ lastGraph } alt="graph" />
           </div>
         </div>
-        <div className="bg-white rounded-md shadow-md w-2/6 p-5">hello</div>
-        <div className="bg-white rounded-md shadow-md w-2/6 p-5">hello</div>
+        <div className="bg-white rounded-md shadow-md md:w-2/6 w-full p-5 flex flex-col gap-5">
+          <div>
+            <h3 className="text-light-theme-gray-dark-blue-grey text-lg	font-semibold">Medical pro branding</h3>
+          </div>
+          <div>
+            <button className="bg-light-theme-primary-primary rounded py-0.5 px-2 text-white text-sm	font-semibold">16 Apr, 2022</button>
+          </div>
+          <div className="border border-white border-b-light-theme-gray-light-grey py-5">
+            <div className="flex justify-between items-center">
+              <div>
+                <p className="text-xs	font-normal	text-light-theme-gray-medium-blue-grey">Due Date</p>
+                <h3 className="text-light-theme-gray-dark-blue-grey text-sm font-semibold">Oct 23, 2022</h3>
+              </div>
+              <div className="border px-3 border-white border-x-light-theme-gray-light-grey">
+                <p className="text-xs	font-normal	text-light-theme-gray-medium-blue-grey">Budget</p>
+                <h3 className="text-light-theme-gray-dark-blue-grey text-sm font-semibold">$98,450</h3>
+              </div>
+              <div>
+                <p className="text-xs	font-normal	text-light-theme-gray-medium-blue-grey">Expense</p>
+                <h3 className="text-light-theme-gray-dark-blue-grey text-sm font-semibold">$48,240</h3>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3 border border-white border-b-light-theme-gray-light-grey py-5">
+            <div>
+              <h3 className="text-light-theme-gray-dark-blue-grey text-base font-semibold">Teams</h3>
+            </div>
+            <div className="flex gap-3">
+              <button className="bg-light-theme-primary-light-primary rounded py-0.5 px-2 text-light-theme-primary-primary text-sm	font-semibold">Bootstrap</button>
+              <button className="bg-light-theme-action-light-light-success rounded py-0.5 px-2 text-light-theme-action-success text-sm	font-semibold">React</button>
+              <button className="bg-light-theme-action-light-light-error rounded py-0.5 px-2 text-light-theme-action-error text-sm	font-semibold">Angular</button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3">
+            <div>
+              <h3 className="text-light-theme-gray-dark-blue-grey text-base font-semibold">Leaders</h3>
+            </div>
+            <div className="flex gap-3">
+              <img src={ officeBoy } alt="boxes-img" />
+              <img src={ funnyGirl } alt="boxes-img" />
+              <img src={ blackBoy } alt="boxes-img" />
+              <img src={ indianMan } alt="boxes-img" />
+            </div>
+          </div>
+        </div>
+        <div className="bg-white rounded-md shadow-md md:w-2/6 w-full p-5 flex flex-col gap-5">
+          <div>
+            <h3 className="text-light-theme-gray-dark-blue-grey text-lg	font-semibold">Daily activities</h3>
+          </div>
+          <div>
+            timeline
+          </div>
+        </div>
       </div>
     </div>
   );
